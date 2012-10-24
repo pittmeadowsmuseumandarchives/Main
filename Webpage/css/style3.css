@@ -13,7 +13,6 @@ background: #FFF;
 width: 1080px;
 margin-left: auto;
 margin-right: auto;
-height: 500px;
 }
 
 .content {
@@ -22,9 +21,20 @@ width:1050px;
 line-height:140%;
 font-size:13px;
 padding: 20px 15px 15px 15px;
-max-height: 500px;
+height: 500px;
 }
 
+.stupid{
+background-color:#FDF9EA;
+width:1030px;
+line-height:140%;
+font-size:13px;
+padding: 20px 15px 15px 15px;
+height: 450px;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
 /* FONTS BEGIN */
 
 h1 {

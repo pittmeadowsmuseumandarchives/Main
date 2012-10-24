@@ -7,10 +7,25 @@
 
 <title>Pitt Meadows Museum</title>
 
+<!-- All css goes here -->
 <link href="css/style1.css" rel="stylesheet" type="text/css" />
 <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
 <link href="css/screen.css" rel="stylesheet" type="text/css" />
 
+<!-- Put all javascript in here -->
+<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+
+<!-- This is the script replaces the scroll bar with a nicer one -->
+<script>
+  $(document).ready(function() {
+    $(".sidebar1").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true}); // First scrollable DIV
+    $(".stupid").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true}); // First scrollable DIV
+  });
+</script>
 
 <!-- BEGIN RANDOM BACKGROUND --> 
 <script type="text/javascript">
@@ -152,6 +167,7 @@ function randomClass()
 
 <!-- BEGIN CONTENT --> 
 <div class="content">
+  <div class="stupid">
       <h1>History</h1>
       <p>The Pitt Meadows General Store was constructed in 1886 and was moved to its current location in 1908. The store contained the community's first Post Office and the first telephone. The building was also used as a confectionary and social gathering place; families would catch up, leave messages for others, and exchange town gossip while they browsed through their mail and bought groceries.</p>
 	  <p>In June of 1998, the Pitt Meadows Heritage and Museum Society moved in and the building became the new and permanent home of the Pitt Meadows Museum and Archives. </p>
@@ -169,6 +185,7 @@ function randomClass()
   		  <a href="images/lightbox imgs /image-3.jpg" rel="lightbox[plants]" title="Click the X or anywhere outside the image to close"><img src="images/lightbox imgs thumb/thumb-2.jpg" width="100px" height="100px" alt="Plants: image 3 0f 3 thumb" /></a>
       </div>
   	</div>
+  </div>
 </div>
 <!-- END CONTENT -->   
     
@@ -196,9 +213,5 @@ function randomClass()
   
 <!-- END CONTAINER -->
 
-<script src="js/jquery-1.7.2.min.js"></script>
-<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
-<script src="js/jquery.smooth-scroll.min.js"></script>
-<script src="js/lightbox.js"></script>
 </body>
 </html>

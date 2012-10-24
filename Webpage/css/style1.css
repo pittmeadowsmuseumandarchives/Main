@@ -22,6 +22,17 @@ line-height:140%;
 font-size:13px;
 padding-top: 15px;
 }
+.stupid{
+background-color:#FDF9EA;
+width: 890px;
+line-height:140%;
+font-size:13px;
+padding: 20px 15px 15px 15px;
+height: 450px;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
 
 /* RIBBON HEADER BEGIN */
 
