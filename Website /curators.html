@@ -26,9 +26,32 @@
   });
 </script>
 
-</head>
+<!-- BEGIN RANDOM BACKGROUND --> 
+<script type="text/javascript">
+function attributeSet(elem, attrb, setting)
+{
+ var elemAttrb = elem.getAttributeNode(attrb);
+ if (elemAttrb)
+ {
+   elemAttrb.value=setting;
+ } else {
+   elem.setAttribute(attrb, setting);
+ }        
+}
 
-<body>
+function randomClass()
+{
+ var classes = ["pattern1","pattern2","pattern3","pattern4","pattern5","pattern6"]
+ var index = Math.floor(Math.random() * classes.length);
+ attributeSet(document.getElementById('myBody'),'class',classes[index]);
+}
+</script>
+
+</head>
+    
+<!-- END RANDOM BACKGROUND --> 
+
+<body id='myBody' onLoad='randomClass();'>
 
 <!-- BEGIN CONTAINER --> 
 <div class="container">
@@ -67,7 +90,7 @@
         <mli><a href="programs.html">PROGRAMS</a>
           <mul>
               <mli><a href="museumsundays.html">Museum Sundays</a></mli>
-                <mli><a href="heriatgethursdays.html">Heritage Thursdays</a></mli>
+                <mli><a href="heritagethursdays.html">Heritage Thursdays</a></mli>
                 <mli><a href="birthdayparties.html">Birthday Parties</a></mli>
                 <mli><a href="schooltours.html">School Tours</a></mli>
             </mul>
@@ -94,28 +117,26 @@
 <!-- BEGIN CONTENT --> 
 <div class="content">
     <div class="stupid">
-      <h1>Lorem Ipsum</h1>
-      <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>	Lorem ipsum dolor sit amet, consectetur ad</p>
-      <p>ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <div class="imageRow">
-  	<div class="set">
-  	  <div class="single first">
-  		    <a href="images/lightbox imgs /image-1.jpg" rel="lightbox[plants]" title="Click on the right side of the image to move forward."><img src="images/lightbox imgs thumb/thumb-1.jpg" width="100px" height="100px" alt="Plants: image 1 0f 3 thumb" /></a>
-  		</div>
-      <div class="single">
-  		    <a href="images/lightbox imgs /image-2.jpg" rel="lightbox[plants]" title="Click on the right side of the image to move forward."><img src="images/lightbox imgs thumb/thumb-2.jpg" width="100px" height="100px" alt="Plants: image 2 0f 3 thumb" /></a>
-      </div>
-      <div class="single last">
-  		    <a href="images/lightbox imgs /image-3.jpg" rel="lightbox[plants]" title="Click on the right side of the image to move forward."><img src="images/lightbox imgs thumb/thumb-3.jpg" width="100px" height="100px" alt="Plants: image 3 0f 3 thumb" /></a>
-      </div>
-  	</div>
-    </div>
+      <h1>Curators</h1>
+
+     <p>The Museum takes on Youth Volunteers throughout the year and the work done can qualify for high school volunteer/work experience credits.</p>
+
+     What volunteers can do:
+      <ul><li>Curatorial (museum) jobs; </li>
+      <li>Office jobs like scanning, typing, and transcribing; </li>
+      <li>Help plan and monitor “Museum Sundays” & "Heritage Thursdays" for kids and families; </li>
+      <li>Special events like Museum After Dark, Pitt Meadows Day, Countryfest, and Canada Day;</li>
+      <li>Holiday celebrations; </li>
+      <li>Building and fixing around the museum </li>
+      <li>Old fashion ice cream making; </li>
+      <li>Exploring books, old time crafts and cooking; </li>
+      <li>Mentoring of younger children.</li></ul>
+
+      <p>Our hours are flexible, and the program runs all year long.</p>
+
+     <p>For more information: drop by the museum or call us at 604-465-4322</p>  
 </div>
-<!-- END CONTENT -->   
+<!-- END CONTENT --> 
     
 
 <!-- BEGIN BOTTOM RIBBON --> 
@@ -141,7 +162,6 @@
     
 <!-- END BOTTOM RIBBON --> 
 </div>
-  
 <!-- END CONTAINER -->
 
 </body>

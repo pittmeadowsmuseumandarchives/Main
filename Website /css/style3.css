@@ -5,7 +5,6 @@ color:#000;
 font:Garamond;
 padding:0;
 font-size:12px;
-background-color:#000;
 }
 
 .container {
@@ -35,6 +34,35 @@ overflow-y: scroll;
 overflow-x: hidden;
 
 }
+
+/* BACKGROUND PATTERN IMAGES BEGIN */
+
+.pattern1{
+background-image:url(../images/backgrounds/wallpaper_1_edit.jpg);
+}
+
+.pattern2{
+background-image:url(../images/backgrounds/wallpaper_2_edit.jpg);
+}
+
+.pattern3{
+background-image:url(../images/backgrounds/wallpaper_3_edit.jpg);
+}
+
+.pattern4{
+background-image:url(../images/backgrounds/wallpaper_4_edit.jpg);
+}
+
+.pattern5{
+background-image:url(../images/backgrounds/wallpaper_5_edit.jpg);
+}
+
+.patten6{
+background-image:url(../images/backgrounds/wallpaper_6_edit.jpg);
+}
+
+/* BACKGROUND PATTERN IMAGES END */
+
 /* FONTS BEGIN */
 
 h1 {
