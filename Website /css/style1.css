@@ -19,7 +19,7 @@ margin-right: auto;
 background-color:#FDF9EA;
 width:1080px;
 line-height:140%;
-font-size:13px;
+font-size:15px;
 padding-top: 15px;
 }
 
@@ -27,7 +27,7 @@ padding-top: 15px;
 background-color:#FDF9EA;
 width: 890px;
 line-height:140%;
-font-size:13px;
+font-size:15px;
 padding: 20px 15px 15px 15px;
 height: 450px;
 overflow-y: scroll;
@@ -75,74 +75,6 @@ background-image:url(../images/backgrounds/wallpaper_6_edit.jpg);
 	position: relative;
 	left:-35px;
 	z-index: 2;
-}
-
-  .ribbon-edge-topleft,
-  .ribbon-edge-topright,
-  .ribbon-edge-bottomleft,
-  .ribbon-edge-bottomright {
-	position: absolute;
-	z-index: 1;
-	border-style:solid;
-	height:0px;
-	width:0px;
-}
-
-  .ribbon-edge-topleft,
-  .ribbon-edge-topright {
-}
-
-  .ribbon-edge-bottomleft,
-  .ribbon-edge-bottomright {
-	top: 105px;
-}
-
-  .ribbon-edge-topleft,
-  .ribbon-edge-bottomleft {
-	left: -35px;
-	border-color: transparent #C4B889 transparent transparent;
-}
-
-  .ribbon-edge-topleft {
-	top: 0px;
-	border-width: 0px 35px 0 0;
-}
-  .ribbon-edge-bottomleft {
-	border-width: 0 35px 110px 0;
-}
-
-  .ribbon-edge-topright,
-  .ribbon-edge-bottomright {
-	left: 1080px;
-	border-color: transparent transparent transparent #C4B889;
-}
-
-  .ribbon-edge-topright {
-	top: 0px;
-	border-width: 0px 0 0 35px;
-}
-  .ribbon-edge-bottomright {
-	border-width: 0 0 110px 35px;
-}
-
-  .ribbon-back-left {
-	position: absolute;
-	top: 110px;
-	left: -75px;
-	width: 75px;
-	height: 110px;
-	background-color: #F4E196;	
-	z-index: 0;
-}
-
-  .ribbon-back-right {
-	position: absolute;
-	top: 110px;
-	right: -75px;
-	width: 75px;
-	height: 110px;
-	background-color: #F4E196;	
-	z-index: 0;
 }
 
 .headerribbontitle {
@@ -223,7 +155,7 @@ width: 100%;
 position: relative;
 margin-left: auto;
 margin-right: auto;
-font-size:10px;
+font-size:11px;
 background-color:#FDF9EA;
 }
 
@@ -322,73 +254,6 @@ padding:0;
 	position: relative;
 	left:-35px;
 	z-index: 2;
-}
-
-
-  .ribbon-edge-topleft2,
-  .ribbon-edge-topright2,
-  .ribbon-edge-bottomleft2,
-  .ribbon-edge-bottomright2 {
-	position: absolute;
-	z-index: 1;
-	border-style:solid;
-	height:0px;
-	width:0px;
-}
-
-  .ribbon-edge-topleft2,
-  .ribbon-edge-topright2 {
-}
-
-  .ribbon-edge-bottomleft2,
-  .ribbon-edge-bottomright2 {
-	top: 75px;
-}
-
-  .ribbon-edge-topleft2,
-  .ribbon-edge-bottomleft2 {
-	left: -35px;
-	border-color: transparent #C4B889 transparent transparent;
-}
-
-  .ribbon-edge-topleft2 {
-	top: -105px;
-	border-width: 110px 35px 0 0;
-}
-  .ribbon-edge-bottomleft2 {
-	border-width: 0 35px 0px 0;
-}
-
-  .ribbon-edge-topright2,
-  .ribbon-edge-bottomright2 {
-	left: 1080px;
-	border-color: transparent transparent transparent #C4B889;
-}
-
-  .ribbon-edge-topright2 {
-	top: -105px;
-	border-width: 110px 0 0 35px;
-}
-  .ribbon-edge-bottomright2 {
-	border-width: 0 0 0px 35px;
-}
-
-  .ribbon-back-left2 {
-	position: absolute;
-	top: -105px;
-	left: -70px;
-	width: 70px;
-	height: 110px;
-	background-color: #F4E196;	z-index: 0;
-}
-
-  .ribbon-back-right2 {
-	position: absolute;
-	top: -105px;
-	right: -70px;
-	width: 70px;
-	height: 110px;
-	background-color: #F4E196;	z-index: 0;
 }
 
 .footerlinks {
