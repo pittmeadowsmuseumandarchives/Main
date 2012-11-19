@@ -2,9 +2,7 @@
 
 body {
 color:#000;
-font:Garamond;
 padding:0;
-font-size:12px;
 background-image:100%;
 }
 
@@ -19,7 +17,7 @@ margin-right: auto;
 background-color:#FDF9EA;
 width:1050px;
 line-height:140%;
-font-size:13px;
+font-size:15px;
 padding: 20px 15px 15px 15px;
 height: 500px;
 }
@@ -81,7 +79,7 @@ text-transform:uppercase;
 h2 {
 font-family:"Helvetica Neue", Helvetica, Arial;
 color:#FF0000;
-font-size:12px;
+font-size:15px;
 letter-spacing:2px;
 padding-bottom:0;
 padding-left:0;
@@ -124,11 +122,13 @@ text-decoration:none;
 /* MAIN MENU BEGIN */
 
 .menu {
-background-color:#FFF;
 line-height:100%;
 width: 100%;
 position: relative;
-font-size:10.5px;
+margin-left: auto;
+margin-right: auto;
+font-size:11px;
+background-color:#FDF9EA;
 }
 
 mul {
@@ -198,8 +198,6 @@ height:25px;
 
 /* FOOTER RIBBON BEGIN */
 
-/* FOOTER RIBBON BEGIN */
-
 .footer {
 background:#606060;
 clear:both;
@@ -219,73 +217,6 @@ padding:0;
 	position: relative;
 	left:-48px;
 	z-index: 2;
-}
-
-
-  .ribbon-edge-topleft2,
-  .ribbon-edge-topright2,
-  .ribbon-edge-bottomleft2,
-  .ribbon-edge-bottomright2 {
-	position: absolute;
-	z-index: 1;
-	border-style:solid;
-	height:0px;
-	width:0px;
-}
-
-  .ribbon-edge-topleft2,
-  .ribbon-edge-topright2 {
-}
-
-  .ribbon-edge-bottomleft2,
-  .ribbon-edge-bottomright2 {
-	top: 75px;
-}
-
-  .ribbon-edge-topleft2,
-  .ribbon-edge-bottomleft2 {
-	left: -50px;
-	border-color: transparent #C4B889 transparent transparent;
-}
-
-  .ribbon-edge-topleft2 {
-	top: -105px;
-	border-width: 110px 35px 0 0;
-}
-  .ribbon-edge-bottomleft2 {
-	border-width: 0 35px 0px 0;
-}
-
-  .ribbon-edge-topright2,
-  .ribbon-edge-bottomright2 {
-	left: 1065px;
-	border-color: transparent transparent transparent #C4B889;
-}
-
-  .ribbon-edge-topright2 {
-	top: -105px;
-	border-width: 110px 0 0 35px;
-}
-  .ribbon-edge-bottomright2 {
-	border-width: 0 0 0px 35px;
-}
-
-  .ribbon-back-left2 {
-	position: absolute;
-	top: -105px;
-	left: -85px;
-	width: 70px;
-	height: 110px;
-	background-color: #F4E196;	z-index: 0;
-}
-
-  .ribbon-back-right2 {
-	position: absolute;
-	top: -105px;
-	right: -86px;
-	width: 70px;
-	height: 110px;
-	background-color: #F4E196;	z-index: 0;
 }
 
 .headerribbontitle {
