@@ -69,6 +69,24 @@ body {
   padding: 0px;
   width: 1080px;
 }
+.stupid_heritagetea {
+  background-color: #fdf9ea;
+  width: 1030px;
+  line-height: 140%;
+  font-size: 16px;
+  padding: 20px 15px 15px 15px;
+  height: 450px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* border-style:solid;
+  border-width:1px;*/
+
+  background-image: url(../images/Community_Main/Community_Heritage_Tea/Heritage_Tea_Background.jpg);
+  background-repeat: no-repeat;
+  background-size: 1080px 450px;
+  padding: 0px;
+  width: 1080px;
+}
 /* BACKGROUND PATTERN IMAGES BEGIN */
 /*
 .pattern1{
