@@ -1,0 +1,274 @@
+@charset UTF-8;
+
+body {
+color:#000;
+padding:0;
+background-image:100%;
+}
+
+.container {
+background: #FFF;
+width: 1080px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.content {
+background-color:#FDF9EA;
+width:1080px;
+line-height:140%;
+font-size:15px;
+padding-top: 15px;
+}
+
+.stupid{
+background-color:#FDF9EA;
+width: 890px;
+line-height:140%;
+font-size:15px;
+padding: 20px 15px 15px 15px;
+height: 450px;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+
+/* BACKGROUND PATTERN IMAGES BEGIN */
+
+/*
+.pattern1{
+background-image:url(/Users/jamiejane/Desktop/Main/images/INDEX_Main/Index_Backgrounds/wallpaper_1_edit.jpg);
+}
+*/
+
+.pattern1{
+background-image:url(../images/INDEX_Main/Index_Backgrounds/wallpaper_1_edit.jpg);
+}
+.pattern2{
+background-image:url(../images/INDEX_Main/Index_Backgrounds/wallpaper_2_edit.jpg);
+}
+
+.pattern3{
+background-image:url(../images/INDEX_Main/Index_Backgrounds/wallpaper_3_edit.jpg);
+}
+
+.pattern4{
+background-image:url(../images/INDEX_Main/Index_Backgrounds/wallpaper_4_edit.jpg);
+}
+
+.pattern5{
+background-image:url(../images/INDEX_Main/Index_Backgrounds/wallpaper_5_edit.jpg);
+}
+
+.pattern6{
+background-image:url(../images/INDEX_Main/Index_Backgrounds/wallpaper_6_edit.jpg);
+}
+
+/* BACKGROUND PATTERN IMAGES END */
+
+/* RIBBON HEADER BEGIN */
+
+.ribbon-wrapper {
+	position: relative;
+}
+  .ribbon-front {
+	background-image:url(../images/INDEX_Main/Index_Top_Banner.jpg);	
+	height: 110px;
+	width: 1150px;
+	position: relative;
+	left:-35px;
+	z-index: 2;
+}
+
+.headerribbontitle {
+color:#FF0000;
+padding-top: 21px;
+}
+
+/*RIBBON HEADER END*/
+
+/* FONTS BEGIN */
+
+h1 {
+color:#FF0000;
+font-family:"Helvetica Neue", Helvetica, Arial;
+font-size:25px;
+font-weight:700;
+letter-spacing:3px;
+margin-top:30px;
+padding-right:5px;
+text-transform:uppercase;
+}
+
+h2 {
+font-family:"Helvetica Neue", Helvetica, Arial;
+color:#FF0000;
+font-size:15px;
+letter-spacing:2px;
+padding-bottom:0;
+padding-left:0;
+}
+
+p {
+padding-right:5px;
+}
+
+a img {
+border:none;
+}
+
+/* FONTS END */
+
+/* LINKS BEGIN */
+
+a:link {
+color:#42413C;
+font-family:"Helvetica Neue", Helvetica, Arial;
+font-weight:700;
+text-transform:uppercase;
+text-decoration:none;
+}
+
+a:visited {
+color:#42413C;
+font-family:"Helvetica Neue", Helvetica, Arial;
+text-decoration:none;
+}
+
+a:hover,a:active,a:focus {
+color:#F66;
+font-family:"Helvetica Neue", Helvetica, Arial;
+text-decoration:none;
+}
+
+/* LINKS END */
+
+/* MAIN MENU BEGIN */
+
+.menu {
+line-height:100%;
+width: 100%;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+font-size:11px;
+background-color:#FDF9EA;
+}
+
+mul {
+list-style:none;
+text-decoration:none;
+height:25px;
+}
+
+mul mli {
+float:left;
+padding-right:0;
+position:relative;
+height:25px;
+}
+
+mul a {
+display:table-cell;
+vertical-align:middle;
+width:135px;
+height:25px;
+text-align:center;
+background:#FDF9EA;
+color:#000;
+text-decoration:none;
+float:center;
+}
+
+mul a:hover {
+background:#0FC;
+color:#42413C;
+background-color:#CCC;
+height:25px;
+}
+
+mli > mul {
+display:none;
+position:absolute;
+left:0;
+top:100%;
+height:25px;
+}
+
+mli:hover > mul {
+display:block;
+height:25px;
+}
+
+mli > mul mli {
+padding:0;
+height:25px;
+}
+
+mli > mul mli > mul {
+padding:0;
+left:100%;
+top: 0; 
+width:100%;
+height:25px;
+}
+
+mli > mul mli > mul:hover {
+width: 100%;
+height:25px;
+}
+
+/* MAIN MENU END */
+
+/* SIDEBAR BEGIN */
+
+.sidebar1 {
+height: 460px;
+width:140px;
+font-size:13px;
+background-color:#FDF9EA;
+padding-left:12px;
+padding-top: 15px;
+overflow-y: scroll;
+overflow-x: hidden;
+float: left;
+}
+
+/* SIDEBAR END */
+
+/* FOOTER RIBBON BEGIN */
+
+.footer {
+background:#606060;
+clear:both;
+height:110px;
+position:relative;
+width:1080px;
+padding:0;
+}
+
+ .ribbon-wrapper2 {
+	position: relative;
+}
+  .ribbon-front2 {
+	background-color: #F6E7AB;	
+	height: 110px;
+	width: 1150px;
+	position: relative;
+	left:-35px;
+	z-index: 2;
+}
+
+.footerlinks {
+position:absolute;
+top:10px;
+right: 50px;
+font-family:"storybook", Arial;
+font-size:20px;
+letter-spacing:5px;
+text-transform:uppercase;
+text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+color:#FF0000;
+}
+
+/* FOOTER RIBBON END */
