@@ -1,16 +1,16 @@
 @charset UTF-8;
 
-@temp: #000000;
+@mainfont: #000000;
 @Backgroundcontainers: #FDF9EA;
 
 
 body {
-  color: @temp;
+  color: @mainfont;
   padding: 0;
   background-image: 100%;
 }
 .container {
-  background: ;
+  background: #FFF;
   width: 1080px;
   margin-left: auto;
   margin-right: auto;
@@ -27,7 +27,7 @@ body {
 /* Parent Container */
 .stupid {
   background-color: @Backgroundcontainers;
-  width: 1030px;
+  width: 1050px;
   line-height: 140%;
   font-size: 16px;
   padding: 20px 15px 15px 15px;
@@ -38,7 +38,7 @@ body {
   border-width:1px;*/
 }
 
-/*Child Containers from .stupid*/
+/* Child Containers from .stupid */
 
 .stupid_support {
   .stupid;
@@ -94,6 +94,7 @@ background-image:url(/Users/jamiejane/Desktop/Main/images/INDEX_Main/Index_Backg
   background-image: url(../images/INDEX_Main/Index_Backgrounds/wallpaper_6_edit.jpg);
 }
 /* BACKGROUND PATTERN IMAGES END */
+
 /* FONTS BEGIN */
 h1 {
   color: #FF0000;
@@ -106,6 +107,7 @@ h1 {
   padding-top: 5px;
   text-transform: uppercase;
 }
+
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial;
   color: #FF0000;
@@ -114,13 +116,17 @@ h2 {
   padding-bottom: 0;
   padding-left: 0;
 }
+
 p {
   padding-right: 5px;
 }
+
 a img {
   border: none;
 }
+
 /* FONTS END */
+
 /* LINKS BEGIN */
 a:link {
   color: #42413C;
@@ -150,7 +156,7 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   font-size: 11px;
-  background-color: #FDF9EA;
+  background-color: @Backgroundcontainers;
 }
 mul {
   list-style: none;
@@ -171,8 +177,8 @@ mul a {
   width: 135px;
   height: 42px;
   text-align: center;
-  background: #FDF9EA;
-  color: #000;
+  background: @Backgroundcontainers;
+  color: @mainfont;
   text-decoration: none;
   height: 25px;
   overflow: hidden;

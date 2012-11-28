@@ -5,7 +5,7 @@ body {
   background-image: 100%;
 }
 .container {
-  background: ;
+  background: #FFF;
   width: 1080px;
   margin-left: auto;
   margin-right: auto;
@@ -20,7 +20,7 @@ body {
 /* Parent Container */
 .stupid {
   background-color: #fdf9ea;
-  width: 1030px;
+  width: 1050px;
   line-height: 140%;
   font-size: 16px;
   padding: 20px 15px 15px 15px;
@@ -31,10 +31,10 @@ body {
   border-width:1px;*/
 
 }
-/*Child Containers from .stupid*/
+/* Child Containers from .stupid */
 .stupid_support {
   background-color: #fdf9ea;
-  width: 1030px;
+  width: 1050px;
   line-height: 140%;
   font-size: 16px;
   padding: 20px 15px 15px 15px;
@@ -53,7 +53,7 @@ body {
 }
 .stupid_community {
   background-color: #fdf9ea;
-  width: 1030px;
+  width: 1050px;
   line-height: 140%;
   font-size: 16px;
   padding: 20px 15px 15px 15px;
@@ -71,7 +71,7 @@ body {
 }
 .stupid_heritagetea {
   background-color: #fdf9ea;
-  width: 1030px;
+  width: 1050px;
   line-height: 140%;
   font-size: 16px;
   padding: 20px 15px 15px 15px;
@@ -168,7 +168,7 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
   font-size: 11px;
-  background-color: #FDF9EA;
+  background-color: #fdf9ea;
 }
 mul {
   list-style: none;
@@ -189,8 +189,8 @@ mul a {
   width: 135px;
   height: 42px;
   text-align: center;
-  background: #FDF9EA;
-  color: #000;
+  background: #fdf9ea;
+  color: #000000;
   text-decoration: none;
   height: 25px;
   overflow: hidden;

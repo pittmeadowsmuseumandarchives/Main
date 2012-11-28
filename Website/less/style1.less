@@ -1,7 +1,10 @@
 @charset UTF-8;
 
+@mainfont: #000000;
+@Backgroundcontainers: #FDF9EA;
+
 body {
-color:#000;
+color:@mainfont;
 padding:0;
 background-image:100%;
 }
@@ -14,7 +17,7 @@ margin-right: auto;
 }
 
 .content {
-background-color:#FDF9EA;
+background-color:@Backgroundcontainers;
 width:1080px;
 line-height:140%;
 font-size:15px;
@@ -22,7 +25,7 @@ padding-top: 15px;
 }
 
 .stupid{
-background-color:#FDF9EA;
+background-color:@Backgroundcontainers;
 width: 890px;
 line-height:140%;
 font-size:15px;
@@ -152,7 +155,7 @@ position: relative;
 margin-left: auto;
 margin-right: auto;
 font-size:11px;
-background-color:#FDF9EA;
+background-color:@Backgroundcontainers;
 }
 
 mul {
@@ -174,8 +177,8 @@ vertical-align:middle;
 width:135px;
 height:25px;
 text-align:center;
-background:#FDF9EA;
-color:#000;
+background:@Backgroundcontainers;
+color:@mainfont;
 text-decoration:none;
 float:center;
 }
@@ -226,7 +229,7 @@ height:25px;
 height: 460px;
 width:140px;
 font-size:13px;
-background-color:#FDF9EA;
+background-color:@Backgroundcontainers;
 padding-left:12px;
 padding-top: 15px;
 overflow-y: scroll;
