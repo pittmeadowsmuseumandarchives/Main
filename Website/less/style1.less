@@ -127,7 +127,6 @@ border:none;
 a:link {
 color:#42413C;
 font-family:"Helvetica Neue", Helvetica, Arial;
-font-weight:700;
 text-transform:uppercase;
 text-decoration:none;
 }
@@ -157,21 +156,21 @@ margin-right: auto;
 font-size:11px;
 background-color:@Backgroundcontainers;
 }
-
-mul {
+/*
+ul {
 list-style:none;
 text-decoration:none;
 height:25px;
 }
 
-mul mli {
+ul li {
 float:left;
 padding-right:0;
 position:relative;
 height:25px;
 }
 
-mul a {
+ul a {
 display:table-cell;
 vertical-align:middle;
 width:135px;
@@ -183,14 +182,14 @@ text-decoration:none;
 float:center;
 }
 
-mul a:hover {
+ul a:hover {
 background:#0FC;
 color:#42413C;
 background-color:#CCC;
 height:25px;
 }
 
-mli > mul {
+li > ul {
 display:none;
 position:absolute;
 left:0;
@@ -198,29 +197,28 @@ top:100%;
 height:25px;
 }
 
-mli:hover > mul {
+li:hover > ul {
 display:block;
 height:25px;
 }
 
-mli > mul mli {
+li > ul li {
 padding:0;
 height:25px;
 }
-
-mli > mul mli > mul {
-padding:0;
-left:100%;
-top: 0; 
-width:100%;
-height:25px;
+*/
+li > ul li > ul {
+color:#42413C;
+font-family:"Helvetica Neue", Helvetica, Arial;
+text-transform:uppercase;
+text-decoration:bold;
 }
-
-mli > mul mli > mul:hover {
+/*
+li > ul li > ul:hover {
 width: 100%;
 height:25px;
 }
-
+*/
 /* MAIN MENU END */
 
 /* SIDEBAR BEGIN */

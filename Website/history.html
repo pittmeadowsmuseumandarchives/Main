@@ -11,6 +11,10 @@
 <link href="css/style3.css" rel="stylesheet" type="text/css" />
 <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
 <link href="css/screen.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/MenuMatic.css" type="text/css" media="screen" charset="utf-8" />
+    <!--[if lt IE 7]>
+      <link rel="stylesheet" href="css/MenuMatic-ie6.css" type="text/css" media="screen" charset="utf-8" />
+    <![endif]-->
 
 <!-- Java Script goes here -->
 <script src="js/jquery-1.7.2.min.js"></script>
@@ -59,59 +63,59 @@ function randomClass()
 <!-- BEGIN MAIN MENU --> 
   <div class="menu">
       
-    <mul>
-      <mli><a href="index.html">HOME</a>
-          <mul>
-              <mli><a href="blog.html">Blog</a></mli>
-                <mli><a href="contactus.html">Contact us</a></mli>
-            </mul>
-        </mli>
-        <mli><a href="history.html">HISTORY</a></mli>
-        <mli><a href="support.html">SUPPORT</a>
-          <mul>
-              <mli><a href="curators.html">Curators</a></mli>
-                <mli><a href="volunteers.html">Volunteers</a></mli>
-                <mli><a href="studentcoop.html">Student Coop</a></mli>
-                <mli><a href="donations.html">Donations</a></mli>
-                <mli><a href="null">Society</a>
-                  <mul>
-                      <mli><a href="join.html">Join</a></mli>
-                        <mli><a href="theagm.html">The AGM</a></mli>
-                    </mul>  
-            </mul>
-            </mli>
-        <mli><a href="community.html">COMMUNITY</a>
-          <mul>
-              <mli><a href="pittmeadows.html">Pitt Meadows Day</a></mli>
-                <mli><a href="heritagetea.html">Heritage Tea</a></mli>
-                <mli><a href="paranormal.html">Paranormal</a></mli>
-          </mul>
-            </mli>
-        <mli><a href="programs.html">PROGRAMS</a>
-          <mul>
-              <mli><a href="museumsundays.html">Museum Sundays</a></mli>
-                <mli><a href="heritagethursdays.html">Heritage Thursdays</a></mli>
-                <mli><a href="birthdayparties.html">Birthday Parties</a></mli>
-                <mli><a href="schooltours.html">School Tours</a></mli>
-                <mli><a href="activity.html">Activities</a></mli>
-                <mli><a href="handson.html">Hands On</a></mli>
-            </mul>
-            </mli>
-        <mli><a href="archives.html">ARCHIVES</a>
-          <mul>
-                <mli><a href="research.html">Research</a></mli>
-                <mli><a href="ourarchive.html">Our Archive</a></mli>
-                <mli><a href="library.html">Library</a></mli>
-                <mli><a href="photos.html">Photos</a></mli>
-                <mli><a href="mapsandplans.html">Maps & Plans</a></mli>
-                <mli><a href="documents.html">Documents</a></mli>
-                <mli><a href="oralhistory.html">Oral History</a></mli>
-          </mul>
-            </mli>
-        <mli><a href="exhibits.html">EXHIBITS</a></mli>     
+    <ul id="nav">
+      <li><a href="index.html">HOME</a>
+          <ul>
+              <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+            </ul>
+        </li>
+        <li><a href="history.html">HISTORY</a></li>
+        <li><a href="support.html">SUPPORT</a>
+          <ul>
+              <li><a href="curators.html">Curators</a></li>
+                <li><a href="volunteers.html">Volunteers</a></li>
+                <li><a href="studentcoop.html">Student Coop</a></li>
+                <li><a href="donations.html">Donations</a></li>
+                <li><a href="null">Society</a>
+                  <ul>
+                      <li><a href="join.html">Join</a></li>
+                        <li><a href="theagm.html">The AGM</a></li>
+                    </ul>  
+            </ul>
+            </li>
+        <li><a href="community.html">COMMUNITY</a>
+          <ul>
+              <li><a href="pittmeadows.html">Pitt Meadows Day</a></li>
+                <li><a href="heritagetea.html">Heritage Tea</a></li>
+                <li><a href="paranormal.html">Paranormal</a></li>
+          </ul>
+            </li>
+        <li><a href="programs.html">PROGRAMS</a>
+          <ul>
+              <li><a href="museumsundays.html">Museum Sundays</a></li>
+                <li><a href="heritagethursdays.html">Heritage Thursdays</a></li>
+                <li><a href="birthdayparties.html">Birthday Parties</a></li>
+                <li><a href="schooltours.html">School Tours</a></li>
+                <li><a href="activity.html">Activities</a></li>
+                <li><a href="handson.html">Hands On</a></li>
+            </ul>
+            </li>
+        <li><a href="archives.html">ARCHIVES</a>
+          <ul>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="ourarchive.html">Our Archive</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="photos.html">Photos</a></li>
+                <li><a href="mapsandplans.html">Maps & Plans</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="oralhistory.html">Oral History</a></li>
+          </ul>
+            </li>
+        <li><a href="exhibits.html">EXHIBITS</a></li>     
             
-        <mli><a href="links.html">LINKS</a></mli>
-    </mul>
+        <li><a href="links.html">LINKS</a></li>
+    </ul>
     </div>
 <!-- END MAIN MENU -->
 
@@ -148,6 +152,17 @@ function randomClass()
 </div>
   
 <!-- END CONTAINER -->
+  <!-- Load the Mootools Framework -->
+  <script src="http://www.google.com/jsapi"></script><script>google.load("mootools", "1.2.1");</script>
+  <!-- Load the MenuMatic Class -->
+  <script src="js/MenuMatic_0.68.3.js" type="text/javascript" charset="utf-8"></script>
+  
+  <!-- Create a MenuMatic Instance -->
+  <script type="text/javascript" >
+    window.addEvent('domready', function() {      
+      var myMenu = new MenuMatic();
+    });   
+  </script>
 
 </body>
 </html>
