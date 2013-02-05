@@ -12,18 +12,26 @@
 #! /usr/bin/python
 
 import os
+import sys
 import re
 import argparse
 import shutil
+import os
 import datetime
 
 # ==================== Configuration do not touch ==============================
 CONFIG_FILE = 'config_file.txt'
-FILE_LIST_BEGIN = "===== [List of HTML Files to Change] ======"
-FILE_LIST_END = "===== [Line to Find] ====="
-FIND_PATTER = "===== [Line to Find] ====="
-REPLACE = "===== [Lines to Replace] ====="
-END_OF_REPLACE = "===== [End Here] ====="
+FILE_LIST_BEGIN = '===== [List of HTML Files to Change] ======\n'
+FILE_LIST_END = '===== [Line to Find] =====\n'
+FIND_PATTER = '===== [Line to Find] =====\n'
+REPLACE = '===== [Lines to Replace] =====\n'
+END_OF_REPLACE = '===== [End Here] =====\n'
+print repr(CONFIG_FILE)
+print repr(FILE_LIST_BEGIN)
+print repr(FILE_LIST_END)
+print repr(FIND_PATTER)
+print repr(REPLACE)
+print repr(END_OF_REPLACE)
 #===============================================================================
 
 CURRENT_TIME = datetime.datetime.now()
@@ -35,19 +43,12 @@ parser.add_argument('-f', action='store', type=str, default=None,
                     help='Choose the filename of the file you wish to modify')
 arguments = parser.parse_args()
 
-PARENT_DIR = os.path.dirname(os.path.abspath(__file__))
-PARENT_DIR = PARENT_DIR.rstrip("python_scripts")
 
 def get_file_locations():
     '''From the Config File gets the list of files specified by the user'''
     files = open(CONFIG_FILE, 'r')
     file_lines = files.readlines()
     files.close()
-
-    # Need to remove carriage return
-    for line, num in zip(file_lines, range(len(file_lines))):
-        file_lines[num]
-        file_lines[num] = file_lines[num].rstrip()
 
     # locate the slice of the file list that relates to the file_names
     initial = file_lines.index(FILE_LIST_BEGIN) + 1
@@ -66,11 +67,6 @@ def get_replace_list():
     replacement_lines = open(CONFIG_FILE, 'r')
     new_lines = replacement_lines.readlines()
     replacement_lines.close()
-    
-    # Need to remove carriage return
-    for line, num in zip(new_lines, range(len(new_lines))):
-        new_lines[num]
-        new_lines[num] = new_lines[num].rstrip()    
 
     # get the lines to modify from the config file
     initial = new_lines.index(REPLACE) + 1
@@ -83,12 +79,6 @@ def get_pattern():
     '''Creates the pattern/string/code to search for in another string'''
     replacement_lines = open(CONFIG_FILE, 'r')
     new_lines = replacement_lines.readlines()
-    
-    # Need to remove carriage return
-    for line, num in zip(new_lines, range(len(new_lines))):
-        new_lines[num]
-        new_lines[num] = new_lines[num].rstrip()    
-    
     replacement_lines.close()
 
     # create the pattern
@@ -100,16 +90,10 @@ def get_pattern():
 
 def get_file_info(file_name):
     '''Returns the contents of the text file as a list'''
-    # look in the parent directory for the file and read its lines    
-    html_file = open(PARENT_DIR + file_name, 'r')
+    # look in the parent directory for the file and read its lines
+    html_file = open(os.path.dirname(__file__) + '\\..\\' + file_name, 'r')
     html_lines = html_file.readlines()
     html_file.close()
-    
-    # Need to remove carriage return
-    for line, num in zip(html_lines, range(len(html_lines))):
-        html_lines[num]
-        html_lines[num] = html_lines[num].rstrip()
-    
     return html_lines
 
 
@@ -141,11 +125,11 @@ def replace_rest_lines(html_lines, line_number, original, REPLACE_LIST):
 
 
 def write_new_file(html_lines, file_name):
-    '''Write to the file and close the file'''  
+    '''Write to the file and close the file'''
     # write to the parent directory
-    html_file = open(PARENT_DIR + file_name, 'w')
+    html_file = open(os.path.dirname(__file__) + '\\..\\' + file_name, 'w')
     for line in html_lines:
-        html_file.write(line + "\n")
+        html_file.write(line)
     html_file.close()
 
 
@@ -170,16 +154,17 @@ def make_copy():
 def main():
     make_copy()
     for file_name in files:
+        shutil.copy2(os.path.dirname(__file__) + '\\..\\' + file_name, 'file_copies/' + TIME + file_name)
+        print('Appending to file %s' % file_name)
         html_lines = get_file_info(file_name)
+
         REPLACE_LIST = get_replace_list()
         pattern = get_pattern()
         line_number = get_line_number(pattern, html_lines)
         original = line_number
         if line_number:
-            shutil.copy2(PARENT_DIR + file_name, 'file_copies/' + TIME + file_name)
             replace_first_line(html_lines, line_number, original, REPLACE_LIST)
             replace_rest_lines(html_lines, line_number, original, REPLACE_LIST)
-            print("Appending lines to file: %s" % file_name)
             write_new_file(html_lines, file_name)
         else:
             print('Could not find the line to replace in %s' % file_name)

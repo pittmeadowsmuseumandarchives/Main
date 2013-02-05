@@ -31,13 +31,13 @@ support.html
 theagm.html
 volunteers.html
 ===== [Line to Find] =====
-<li><a href="activity.html">Activities</a>
+<li><a href="activity.html">Activities</a></li>
 ===== [Lines to Replace] =====
-                <li><a href="activity.html">Activities</a></li>
-delete_line                    <ul>
-delete_line                    <li><a href="handson.html">Hands On</a></li>
-delete_line                    <li><a href="activity.html">Activity Sheets</a></li>
-delete_line                    <li><a href="discoveryboxes">Discovery Boxes</a></li>
-delete_line                    </ul>
-delete_line                </li>
+                <li><a href="activity.html">Activities</a>
+                    <ul>
+                    <li><a href="handson.html">Hands On</a></li>
+                    <li><a href="activity.html">Activity Sheets</a></li>
+                    <li><a href="discoveryboxes">Discovery Boxes</a></li>
+                    </ul>
+                </li>
 ===== [End Here] =====
