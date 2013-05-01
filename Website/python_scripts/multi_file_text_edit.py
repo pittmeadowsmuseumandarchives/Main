@@ -19,11 +19,19 @@ import datetime
 
 # ==================== Configuration do not touch ==============================
 CONFIG_FILE = 'config_file.txt'
+<<<<<<< HEAD
 FILE_LIST_BEGIN = "===== [List of HTML Files to Change] ======"
 FILE_LIST_END = "===== [Line to Find] ====="
 FIND_PATTER = "===== [Line to Find] ====="
 REPLACE = "===== [Lines to Replace] ====="
 END_OF_REPLACE = "===== [End Here] ====="
+=======
+FILE_LIST_BEGIN = '===== [List of HTML Files to Change] ======\r\n'
+FILE_LIST_END = '===== [Line to Find] =====\r\n'
+FIND_PATTER = '===== [Line to Find] =====\r\n'
+REPLACE = '===== [Lines to Replace] =====\r\n'
+END_OF_REPLACE = '===== [End Here] =====\r\n'
+>>>>>>> all the changes
 #===============================================================================
 
 CURRENT_TIME = datetime.datetime.now()
@@ -100,8 +108,13 @@ def get_pattern():
 
 def get_file_info(file_name):
     '''Returns the contents of the text file as a list'''
+<<<<<<< HEAD
     # look in the parent directory for the file and read its lines    
     html_file = open(PARENT_DIR + file_name, 'r')
+=======
+    # look in the parent directory for the file and read its lines
+    html_file = open(os.path.dirname(__file__) + '../' + file_name, 'r')
+>>>>>>> all the changes
     html_lines = html_file.readlines()
     html_file.close()
     
@@ -143,7 +156,11 @@ def replace_rest_lines(html_lines, line_number, original, REPLACE_LIST):
 def write_new_file(html_lines, file_name):
     '''Write to the file and close the file'''  
     # write to the parent directory
+<<<<<<< HEAD
     html_file = open(PARENT_DIR + file_name, 'w')
+=======
+    html_file = open(os.path.dirname(__file__) + '../' + file_name, 'w')
+>>>>>>> all the changes
     for line in html_lines:
         html_file.write(line + "\n")
     html_file.close()
@@ -153,7 +170,7 @@ def get_line_number(pattern, html_lines):
     '''Search for the pattern and return the line number from the file'''
     line_number = None
     for line, number in zip(html_lines, range(len(html_lines))):
-        if re.search(pattern, line):
+        if re.search(pattern, repr(line)):
             line_number = number
     # controls output if returns a number > 0 replaces a line
     return line_number
@@ -170,6 +187,11 @@ def make_copy():
 def main():
     make_copy()
     for file_name in files:
+<<<<<<< HEAD
+=======
+        shutil.copy2(os.path.dirname(__file__) + '../' + file_name, 'file_copies/' + TIME + file_name)
+        print('Appending to file %s' % file_name)
+>>>>>>> all the changes
         html_lines = get_file_info(file_name)
         REPLACE_LIST = get_replace_list()
         pattern = get_pattern()

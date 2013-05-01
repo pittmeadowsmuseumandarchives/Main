@@ -31,6 +31,7 @@ support.html
 theagm.html
 volunteers.html
 ===== [Line to Find] =====
+<<<<<<< HEAD
 <li><a href="activity.html">Activities</a>
 ===== [Lines to Replace] =====
                 <li><a href="activity.html">Activities</a></li>
@@ -40,4 +41,9 @@ delete_line                    <li><a href="activity.html">Activity Sheets</a></
 delete_line                    <li><a href="discoveryboxes">Discovery Boxes</a></li>
 delete_line                    </ul>
 delete_line                </li>
+=======
+<title>Pitt Meadows Museum</title>
+===== [Lines to Replace] =====
+<title>Pitt Meadows Museum Replaced!</title>
+>>>>>>> all the changes
 ===== [End Here] =====
